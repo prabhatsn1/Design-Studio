@@ -3,6 +3,8 @@
 import "./globals.css";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/utils/theme";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 export default function RootLayout({
   children,
@@ -12,7 +14,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeProvider theme={theme}>{children}</ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
