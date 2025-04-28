@@ -1,4 +1,4 @@
-import React, { use } from "react";
+import React from "react";
 import Image from "next/image";
 import MenuIcon from "@mui/icons-material/Menu";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
     >
       <Box
         sx={{
-          maxWidth: '100vw',
+          maxWidth: "100vw",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-evenly",
