@@ -3,7 +3,12 @@ import { Box, Grid, Typography, Paper } from "@mui/material";
 import Image from "next/image";
 
 // Data for artisans
-const artisans = [
+const artisans: {
+  name: string;
+  image: string;
+  description: string;
+  align: "left" | "right";
+}[] = [
   {
     name: "Sirajuddin",
     image: "/artisans/sirajuddin.jpg", // Replace with your image path
@@ -47,7 +52,7 @@ const ArtisanCard: React.FC<{
     alignItems="center"
     sx={{ mb: { xs: 5, md: 7 } }}
   >
-    <Grid item xs={12} md={6}>
+    <Grid size={{ xs: 12, md: 6 }}>
       <Paper
         elevation={0}
         sx={{
@@ -72,9 +77,7 @@ const ArtisanCard: React.FC<{
       </Paper>
     </Grid>
     <Grid
-      item
-      xs={12}
-      md={6}
+      size={{ xs: 12, md: 6 }}
       sx={{ display: "flex", justifyContent: "center" }}
     >
       <Box
