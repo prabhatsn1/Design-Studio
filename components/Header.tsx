@@ -12,7 +12,6 @@ import Box from "@mui/material/Box";
 import { useState } from "react";
 import Logo from "@/media/logo.png";
 import SearchIcon from "@mui/icons-material/Search";
-import { useTheme } from "@mui/material";
 
 const navLinks = [
   { label: "Artisan", href: "#" },
@@ -27,8 +26,6 @@ const navLinks = [
 
 const Header: React.FC = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
-
-  const theme = useTheme(); // Use the theme hook to access theme properties
 
   return (
     <header
@@ -86,7 +83,7 @@ const Header: React.FC = () => {
           >
             <Box
               sx={{
-                bgcolor: theme.palette.pigmentgreen?.main,
+                bgcolor: "#1F6F83",
                 color: "white",
                 borderRadius: "50%",
                 width: 36,
