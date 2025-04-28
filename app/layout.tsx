@@ -1,6 +1,5 @@
 "use client";
 
-import "./globals.css";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/utils/theme";
 import Footer from "@/components/Footer";
