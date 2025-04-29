@@ -50,7 +50,6 @@ const ArtisanCard: React.FC<{
         </Typography>
       </Stack>
       <Stack
-        bgcolor="green"
         sx={{
           width: 300,
           height: 266,
