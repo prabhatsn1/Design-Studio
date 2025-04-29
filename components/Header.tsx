@@ -14,7 +14,7 @@ import Logo from "@/media/logo.png";
 import SearchIcon from "@mui/icons-material/Search";
 
 const navLinks = [
-  { label: "Artisan", href: "#" },
+  { label: "Artisan", href: "/Artisan" },
   { label: "Products", href: "#" },
   { label: "Motifs", href: "#" },
   {
