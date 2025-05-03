@@ -4,6 +4,7 @@ import Person1 from "@/media/p01.jpg";
 import Person8 from "@/media/p08.jpg";
 import Person9 from "@/media/p09.jpg";
 import Person10 from "@/media/p10.jpg";
+import Carasol from "@/components/Carasol";
 
 export default function Artisan() {
   return (
@@ -86,6 +87,7 @@ export default function Artisan() {
           align="right"
         />
       </Stack>
+      <Carasol />
     </Box>
   );
 }
