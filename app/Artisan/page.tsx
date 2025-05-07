@@ -87,6 +87,11 @@ export default function Artisan() {
           align="right"
         />
       </Stack>
+      <Typography
+        sx={{ fontFamily: "Georgia", fontSize: "40px", mb: -8, mt: 4 }}
+      >
+        Craftsmen
+      </Typography>
       <Carasol />
     </Box>
   );

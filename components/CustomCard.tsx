@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // components/CustomCard.tsx
-import { Card, CardContent, Typography, Box } from "@mui/material";
+import { Card, CardContent, Typography } from "@mui/material";
+import Image from "next/image";
 
 interface CustomCardProps {
   name?: string;
@@ -22,16 +23,15 @@ export default function CustomCard({ name, imageUrl }: CustomCardProps) {
         justifyContent: "center",
       }}
     >
-      <Box
-        component="img"
+      <Image
         src={imageUrl}
-        alt={name}
-        sx={{
-          width: 135.1,
-          height: 126.6,
+        alt={name || "Image"}
+        width={135}
+        height={127}
+        style={{
           objectFit: "cover",
-          borderRadius: 2,
-          mb: 2,
+          borderRadius: "8px",
+          marginBottom: "16px",
         }}
       />
       <CardContent sx={{ padding: 0 }}>
