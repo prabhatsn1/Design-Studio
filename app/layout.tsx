@@ -4,8 +4,6 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/utils/theme";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 
 export default function RootLayout({
   children,

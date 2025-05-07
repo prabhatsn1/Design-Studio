@@ -36,6 +36,9 @@ const Header: React.FC = () => {
         position: "sticky", // Make the header sticky
         top: 0, // Stick to the top of the viewport
         zIndex: 1000,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
       <Box
