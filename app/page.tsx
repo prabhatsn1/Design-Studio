@@ -8,9 +8,8 @@ import obj3 from "@/media/obj3.png";
 import obj4 from "@/media/obj4.png";
 
 export default function Home() {
-  console.log("hello world");
   return (
-    <div>
+    <Stack>
       <Stack
         id="First Section"
         sx={{
@@ -27,7 +26,7 @@ export default function Home() {
             sx={{
               fontFamily: "Georgia",
               letterSpacing: 4.8,
-              mt: '50%',
+              mt: "50%",
             }}
           >
             Craft intro video
@@ -114,6 +113,6 @@ export default function Home() {
         sx={{ bgcolor: "#F2F1D9", height: 1402 }}
       ></Stack>
       <Stack id="Fourth Section" sx={{ height: "916px" }}></Stack>
-    </div>
+    </Stack>
   );
 }

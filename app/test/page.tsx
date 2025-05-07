@@ -1,7 +1,7 @@
 "use client";
 
-import Carasol from "@/components/Carasol";
+import Motif from "@/components/Motif";
 
 export default function TestPage() {
-  return <Carasol />;
+  return <Motif />;
 }
